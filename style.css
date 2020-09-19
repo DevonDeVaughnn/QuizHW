@@ -11,7 +11,7 @@
 }
 .grid h1{
 	font-family: Arial, Helvetica, sans-serif;
-	
+	background-color: rgba(228, 191, 255, 0.377);
 	font-size: 60px;
 	text-align: center;
 	padding: 2px 0px;
@@ -60,4 +60,10 @@
 }
 #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus{
 	outline:0px;
+}
+#score{
+	margin: 0 auto;
+	margin-top: 200px;
+	font-size: 40px;
+
 }

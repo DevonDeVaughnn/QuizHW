@@ -61,7 +61,7 @@ function showProgress() {
 };
 
 function showScore() {
-    var quizOver = "<h2>Result</h2>"
+    var quizOver = "<h1>Result</h1>"
     quizOver += "<h4 id = 'score'> Your score: " + quiz.score + "<h4>";
     var element = document.getElementById("quiz");
     element.innerHTML = quizOver;
