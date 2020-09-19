@@ -23,9 +23,10 @@ quizQue.prototype.guessAnswer = function (answer) {
     }
     this.questionIndex++;
 }
-
+//Goes to next question after choice is selected
 function populate() {
     if (quiz.isOver()) {
+
         showScore();
     } else {
         //show question
@@ -43,8 +44,7 @@ function populate() {
     }
 };
 
-
-
+//Checks if answer is right or wrong
 function guessAnswer(id, guessAnswer) {
     var button = document.getElementById(id);
     button.onclick = function () {
@@ -79,6 +79,7 @@ let questions = [
 
     new askQuestions("Which actor has an eye condition called heterochromia meaning their eyes are different colors?", ["Boilerdang Crimpysnitch", "Bendybobert Cackleboon", "Bonaparte Curdlesnoot", "Ben Ten"], "Bonaparte Curdlesnoot"),
 ]
+//Starts quiz
 var quiz = new quizQue(questions);
 populate();
 
